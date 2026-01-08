@@ -1,4 +1,60 @@
 body {
-    background-color: blue;
+    padding: 0;
+    margin: 0;
+    --white: #F2F2F2;
+    --blue: #023E8B;
+    --cream: #F3EADD;
+    --body: 'DM Sans';
+    --heading: 'Merriweather';
+    background-color: var(--cream);
+    font-family: var(--body);
+}
 
+/* top navigation */
+
+nav {
+    padding: 1%;
+    margin: 0;
+    background-color: var(--blue);
+    color: var(--white);
+    font-family: var(--body);
+    font-size: 16px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* header */
+
+header {
+    padding: 0 0 5% 0;
+    margin: 0;
+    background-color: var(--blue);
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+    border: #000, 1px;
+    border-radius: 0 0 20% 20%;
+}
+
+header div h1 {
+    font-family: var(--heading);
+    font-size: 48px;
+    text-align: center;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
 }
