@@ -61,6 +61,7 @@ header ul {
     background-color: var(--cream);
     padding: 1% 2% 1% 2%;
     color: var(--brown);
+    border-radius: 50px;
 }
 
 /* body */
@@ -145,5 +146,28 @@ main article ul {
 }
 
 .button:hover li a, .button:hover i{
+    color: var(--white);
+}
+
+/* footer */
+footer {
+    width: 100%;
+    position: absolute;
+    font: var(--body);
+    color: var(--white);
+    background-color: var(--blue);
+    bottom: 0;
+}
+
+footer div {
+    padding: 1% 5% 1% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+footer a {
+    text-decoration: none;
     color: var(--white);
 }
