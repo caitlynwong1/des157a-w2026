@@ -7,7 +7,7 @@
 body {
     padding: 0;
     margin: 0;
-    --white: #F2F2F2;
+    --white: #f1f1f1;
     --blue: #023E8B;
     --cream: #F3EADD;
     --brown: #46200A;
@@ -15,8 +15,7 @@ body {
     --heading: 'Merriweather';
     background-color: var(--white);
     font-family: var(--body);
-    /*background-image: url("images/wood.jpg");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-position: center;
     background-size: 1200px; */
 }
@@ -31,7 +30,11 @@ header {
     align-items: center;
     justify-content: center;
     border: #000, 1px;
-    border-radius: 0 0 20% 20%;
+    border-radius: 0 0 70% 70%;
+    /* background-image: url("images/fish.png");
+    /* background-repeat: no-repeat; */
+    /* background-position: center;
+    background-size: 400px; */
 }
 
 header div h1 {
@@ -151,23 +154,74 @@ main article ul {
 
 /* footer */
 footer {
-    width: 100%;
     position: absolute;
-    font: var(--body);
-    color: var(--white);
-    background-color: var(--blue);
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
     bottom: 0;
 }
 
-footer div {
+footer div:first-of-type {
+    width: 100%;
+    margin-left: 65%;
+    margin-bottom: -5%;
+}
+
+footer div:last-of-type {
+    font: var(--body);
+    color: var(--white);
+    background-color: var(--blue);
+    margin: auto;
     padding: 1% 5% 1% 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: auto;
 }
 
 footer a {
     text-decoration: none;
     color: var(--white);
+}
+
+.fish {
+    animation-name: swim;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.fish:first-of-type{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+.fish:last-of-type{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+
+.fish:hover {
+    transform: rotate(360deg);
+}
+
+@keyframes swim {
+    0% {
+        transform: rotate(0deg);
+    } 15% {
+        transform: rotate(-20deg);
+    } 30% {
+        transform: rotate(20deg);
+    } 45% {
+        transform: rotate(-20deg);
+    } 60% {
+        transform: rotate(20deg);
+    }
+
+}
+
+.bear {
+    position: relative;
+    bottom: 10%;
+    left: 5%;
 }
