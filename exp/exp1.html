@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <title>Experiment 1</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    <h2>Open up the console to see the functionality of the code</h2>
+
+    <script>
+        // SEQUENCE
+        var input = prompt("Tell me anything", "");
+        var inputLength = input.length;
+        console.log(inputLength);
+        // empty string
+        var letters = "";
+
+        // LOOP
+        // places letters one by one into letter
+        for(var i=0; i<input.length; i++) {
+            // SELECTION
+            // if letter position is even
+            if (i % 2 == 0) {
+                // input[i].toUpperCase();
+                // console.log(input[i]);
+                // make letter uppercase
+                letters += input[i].toUpperCase();
+            } else {
+                // move letter as it is
+                letters += input[i];
+            }
+        }
+        console.log(letters);
+
+        // for(var i=0; i<inputLength; i++) {
+        //     let char = input.charAt(i);
+        //     // console.log(`${char}`)
+        //     letters.push(`${char}`);
+        //     // console.log(`${letters}`)
+        // }
+
+        // for(var i=0; i<letters.length; i++) { 
+        //     // console.log(letters[i]);
+        //     if (letters[i] % 2 == 0) {
+        //         console.log(letters[i]);
+        //     }
+        // }
+
+        // if (letters[i] % 2 == 0) {
+        //     letters[i].toUpperCase();
+        //     console.log(`${letters[i]}`);
+
+        // for (var i=0; i>input.Length; i++) {
+        //     let char = input.charAt(i);
+        //     letters.push(i);
+        //     console.log(letters);
+        // }
+    </script>
+</body>
+</html>
