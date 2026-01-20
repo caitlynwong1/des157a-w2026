@@ -1,12 +1,6 @@
-#container {
-    max-width: 1200px;
-    max-height: 750px;
-    margin: auto;
-}
-
 body {
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     --white: #f1f1f1;
     --blue: #023E8B;
     --cream: #F3EADD;
@@ -15,10 +9,6 @@ body {
     --heading: 'Merriweather';
     background-color: var(--white);
     font-family: var(--body);
-    /* background-image: url(images/limestone.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 1200px; */
 }
 
 /* header */
@@ -31,11 +21,6 @@ header {
     align-items: center;
     justify-content: center;
     border: #000 1px;
-    border-radius: 0 0 70% 70%;
-    /* background-image: url("images/fish.png");
-    /* background-repeat: no-repeat; */
-    /* background-position: center;
-    background-size: 400px; */
 }
 
 header div h1 {
@@ -79,11 +64,13 @@ h2 {
 }
 
 main {
-    margin: 0 5% 0 5%;
+    margin: auto;
     padding: 0;
     display: flex;
     flex-direction: row;
     gap: 2%;
+    max-width: 1200px;
+    padding: 48px 120px 48px 120px;
 }
 
 main article {
@@ -155,17 +142,13 @@ main article ul {
 
 /* footer */
 footer {
-    position: absolute;
-    margin: auto;
     width: 100%;
-    max-width: 1200px;
-    bottom: 0;
 }
 
 footer div:first-of-type {
     width: 100%;
     margin-left: 65%;
-    margin-bottom: -5%;
+    
 }
 
 footer div:last-of-type {

@@ -1,0 +1,124 @@
+body {
+    margin: auto;
+    --white: #f1f1f1;
+    --blue: #023E8B;
+    --cream: #F3EADD;
+    --brown: #46200A;
+    --gray: #484848;
+    --body: 'DM Sans';
+    --heading: 'Merriweather';
+    background-color: white;
+    font-family: var(--body);
+    line-height: 1.5em;
+}
+
+main {
+    margin: auto;
+    max-width: 1200px;
+    padding: 48px 120px 48px 120px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--brown);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+main p {
+    color: var(--gray);
+}
+
+h1, h2 {
+    font-family: var(--heading);
+    line-height: 1.5em;
+}
+
+h3 {
+    color: var(--blue);
+    font-style: normal;
+    font-size: 16px;
+}
+
+article {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+article:first-of-type{
+    margin-top: 0;
+}
+
+/* animations */
+.button {
+    width: fit-content;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    list-style-type: none;
+    background-color: var(--cream);
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.button::after {
+    content:"";
+    width: 0;
+    height: 100%;
+    background-color: var(--brown);
+    transition: width 1s;
+    position: absolute;
+    left: 0;
+}
+
+.button:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.button:hover {
+    color: var(--white);
+}
+
+.button:hover i {
+    transform: rotate(90deg);
+    transition: all 500ms;
+}
+
+.button a, .button i {
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    color: var(--brown);
+}
+
+.button:hover a, .button:hover i{
+    color: var(--white);
+}
+
+/* footer */
+header, footer {
+    padding: 16px 32px 16px 32px;
+}
+footer {
+    width: 100%;
+    background-color: var(--blue);
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+footer div a{
+    text-decoration: none;
+    color: white;
+}
