@@ -1,6 +1,7 @@
 body {
     /* padding: 0;
     margin: 0; */
+    margin: auto;
     --white: #f1f1f1;
     --blue: #023E8B;
     --cream: #F3EADD;
@@ -9,6 +10,7 @@ body {
     --heading: 'Merriweather';
     background-color: var(--white);
     font-family: var(--body);
+    width: 100%;
 }
 
 /* header */
@@ -21,6 +23,7 @@ header {
     align-items: center;
     justify-content: center;
     border: #000 1px;
+    width: 100%;
 }
 
 header div h1 {
