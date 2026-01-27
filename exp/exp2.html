@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <h2></h2>
+    <p></p>
+    <img>
+
+    <script>
+        var myChoice = prompt("Pick a blind box: Smiski, Labubu, or Skullpanda", "").toLowerCase();
+        console.log(myChoice);
+        document.querySelector('h2').innerHTML = `Here is your ${myChoice}!`;
+        
+        if (myChoice == "smiski") {
+		    document.querySelector('img').setAttribute('src', 'images/smiski.png');
+        } else if (myChoice == "skullpanda") {
+            document.querySelector('img').setAttribute('src', 'images/skullpanda.png');
+        } else if (myChoice == "labubu") {
+            document.querySelector('img').setAttribute('src', 'images/labubu.png');
+        } else {
+            document.querySelector('h2').innerHTML = `No choice selected`;
+        }
+
+        var boxTypes = ['regular', 'secret'];
+        function randomInt(min, max){
+            var numOfValues = max - min + 1;
+            var randomNum = Math.random();
+            var randomVal = randomNum * numOfValues;
+            var roundedRandomVal = Math.floor(randomVal);
+            var finalNum  = min + roundedRandomVal;
+            return finalNum;
+        }
+
+        var boxType = boxTypes[randomInt(0,1)];
+        document.querySelector('p').innerHTML = `This is a <strong>${boxType}</strong> blind box`;
+
+        // Based on the user's input, the computer selects a blind box and displays the corresponding character on the screen. It then randomly tells the user whether the character they chose is a regular or secret one.
+    </script>
+</body>
+</html>
