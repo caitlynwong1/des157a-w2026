@@ -7,7 +7,7 @@ body {
     --gray: #484848;
     --body: 'DM Sans';
     --heading: 'Merriweather';
-    background-color: white;
+    background-color: var(white);
     font-family: var(--body);
     line-height: 1.5em;
 }
@@ -15,7 +15,10 @@ body {
 main {
     margin: auto;
     max-width: 1200px;
-    padding: 48px 120px 48px 120px;
+    padding: 48px 20% 48px 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
 }
 
 header a {
@@ -25,7 +28,7 @@ header a {
 
 img {
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 0;
     border-radius: 10px;
 }
@@ -52,6 +55,14 @@ article {
 
 article:first-of-type{
     margin-top: 0;
+}
+
+/* #one, #two {
+    background-color: white;
+} */
+
+#two {
+    border-bottom: rgb(232, 232, 232) solid 1px;
 }
 
 /* animations */
