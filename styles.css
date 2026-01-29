@@ -8,22 +8,30 @@ body {
     --brown: #46200A;
     --body: 'DM Sans';
     --heading: 'Merriweather';
-    background-color: var(--white);
+    background-color: white;
     font-family: var(--body);
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* header */
 
 header {
-    padding: 3% 0 3% 0;
-    margin: 0;
+    padding: 3% 20% 3% 20%;
+    margin: auto;
     background-color: var(--brown);
     color: var(--white);
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     border: #000 1px;
-    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+}
+
+header div {
+    flex: 1;
 }
 
 header div h1 {
@@ -31,27 +39,22 @@ header div h1 {
     margin: 0;
     font-family: var(--heading);
     font-size: 48px;
-    text-align: center;
-}
-
-header ul {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
 }
 
 .tags {
+    flex: 1;
+    padding: 0;
     margin: auto;
+    text-decoration: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     list-style-type: none;
     gap: 16px;
 }
 
 .tags li {
     background-color: var(--cream);
-    padding: 1% 2% 1% 2%;
+    padding: 2% 3% 2% 3%;
     color: var(--brown);
     border-radius: 50px;
 }
@@ -146,6 +149,7 @@ main article ul {
 /* footer */
 footer {
     width: 100%;
+    bottom: 0;
 }
 
 footer div:first-of-type {
