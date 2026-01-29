@@ -233,15 +233,20 @@ footer a {
     }
 
     .fish:first-of-type{
-        top: 15%;
+        top: 20%;
     }
 
     .fish:last-of-type{
-        top: 15%;
+        top: 20%;
     }
+
 }
 
 @media (max-width: 900px) {
+    header{
+        padding: 10% 10% 10% 10%;
+    }
+
     main {
         flex-direction: column;
     }
@@ -251,6 +256,10 @@ footer a {
     }
 
     h2 {
-        margin-top: 80px;
+        margin-top: 64px;
+    }
+
+    .button {
+        padding: 5%;
     }
 }
