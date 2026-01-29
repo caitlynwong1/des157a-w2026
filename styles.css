@@ -17,7 +17,7 @@ body {
 /* header */
 
 header {
-    padding: 3% 20% 3% 20%;
+    padding: 3% 10% 3% 10%;
     margin: auto;
     background-color: var(--brown);
     color: var(--white);
@@ -39,6 +39,7 @@ header div h1 {
     margin: 0;
     font-family: var(--heading);
     font-size: 48px;
+    text-align: center;
 }
 
 .tags {
@@ -76,7 +77,7 @@ main {
     flex-direction: row;
     gap: 2%;
     max-width: 1200px;
-    padding: 48px 120px 48px 120px;
+    padding: 2% 10% 2% 10%;
 }
 
 main article {
@@ -214,4 +215,42 @@ footer a {
     position: relative;
     bottom: 10%;
     left: 5%;
+}
+
+@media (max-width: 1000px) {
+    header {
+        padding: 3% 0% 3% 0%;
+        flex-direction: column;
+    }
+
+    .tags {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .tags li {
+        padding: 1% 2% 1% 2%;
+    }
+
+    .fish:first-of-type{
+        top: 15%;
+    }
+
+    .fish:last-of-type{
+        top: 15%;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+
+    article {
+        margin-top: 0;
+    }
+
+    h2 {
+        margin-top: 80px;
+    }
 }
