@@ -1,0 +1,70 @@
+body {
+    --brown: #46200A;
+    --cream: #FFF2E1;
+    background-color: var(--cream);
+    color: var(--brown);
+    font-family: 'DotGothic16';
+}
+
+main {
+    padding: 5% 10% 5% 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+header {
+    padding: 1% 
+}
+
+h1 {
+    font-size: 64px;
+}
+
+#left img {
+    width: 80%;
+}
+
+/* Form */
+input, label {
+    display: block;
+}
+
+input {
+    margin-bottom: 1em;
+    color: var(--brown);
+}
+
+fieldset input, fieldset label {
+    display: inline;
+}
+
+fieldset label {
+    margin-bottom: em;
+}
+
+label {
+    font-family: 'DotGothic16';
+    margin-bottom: 4px;
+}
+
+#form {
+    /* background-image: url('images/paper.png');
+    background-repeat: no-repeat; */
+    background-color: white;
+    padding: 5%;
+}
+
+#questions {
+    columns: 2;
+}
+
+#color {
+    width: 100%;
+}
+
+#submitbtn {
+    background-color: var(--brown);
+    color: white;
+    width: 100%;
+}
