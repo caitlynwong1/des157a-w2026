@@ -1,6 +1,7 @@
 body {
     --brown: #46200A;
     --cream: #FFF2E1;
+    --coffee: #B87247;
     background-color: var(--cream);
     color: var(--brown);
     font-family: 'DotGothic16';
@@ -57,13 +58,15 @@ fieldset label {
 
 label {
     font-family: 'DotGothic16';
+    color: white;
     margin-bottom: 4px;
 }
 
 #form {
-    /* background-image: url('images/paper.png');
-    background-repeat: no-repeat; */
-    background-color: white;
+    background-image: url('images/board.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* background-color: white; */
     padding: 5% 5% 0% 5%;
     margin: 0;
     height: fit-content;
@@ -72,27 +75,32 @@ label {
 #questions {
     columns: 2;
     column-gap: 1em;
+    margin-top: 10%;
 }
 
 #color {
     width: 100%;
 }
 
-/* form {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-} */
-
 #submitbtn {
     margin: 0;
     padding: 2%;
-    background-color: var(--brown);
+    background-color: var(--coffee);
+    text-decoration: none;
     color: white;
     width: 100%;
     /* margin-top: 20%; */
     margin-top: 15%;
     margin-bottom: 15%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 5px 1px rgba(34, 34, 34, 0.43);
+
+}
+
+#submitbtn:hover {
+    transform: translateY(2px);
+    box-shadow: none;
 }
 
 @media (max-width: 800px) {
