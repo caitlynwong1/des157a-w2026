@@ -7,22 +7,34 @@ body {
 }
 
 main {
-    padding: 5% 10% 5% 10%;
+    padding: 2% 10% 2% 10%;
     display: flex;
     flex-direction: row;
     gap: 10%;
 }
 
 header {
-    padding: 1% 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5% 1% 5%;
 }
 
 h1 {
     font-size: 64px;
+    margin: 0;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
 }
 
 #left img {
     width: 80%;
+    height: fit-content;
+    margin-top: 10%;
 }
 
 /* Form */
@@ -40,7 +52,7 @@ fieldset input, fieldset label {
 }
 
 fieldset label {
-    margin-bottom: em;
+    margin-bottom: 1em;
 }
 
 label {
@@ -52,19 +64,57 @@ label {
     /* background-image: url('images/paper.png');
     background-repeat: no-repeat; */
     background-color: white;
-    padding: 5%;
+    padding: 5% 5% 0% 5%;
+    margin: 0;
+    height: fit-content;
 }
 
 #questions {
     columns: 2;
+    column-gap: 1em;
 }
 
 #color {
     width: 100%;
 }
 
+/* form {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+} */
+
 #submitbtn {
+    margin: 0;
+    padding: 2%;
     background-color: var(--brown);
     color: white;
     width: 100%;
+    /* margin-top: 20%; */
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+@media (max-width: 800px) {
+    main{
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    #left {
+        margin-bottom: 5%;
+        align-items: center;
+    }
+
+    #submitbtn {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    input {
+        width: 100%;
+    }
 }
