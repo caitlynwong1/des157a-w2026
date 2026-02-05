@@ -2,7 +2,8 @@
     "use strict";
     console.log("reading js");
 
-    const overlayContent = document.querySelector('#overlayContent p');
+    const overlayContent = document.querySelector('#overlayText p');
+    const overlayTitle = document.querySelector('#overlayText h2')
     const errorMessage = document.querySelector('#errorMessage');
     const myForm = document.querySelector('#form');
 
@@ -76,12 +77,12 @@
 
             storyTitle = `Mr. Bread's ${adj1} Day`;
             storyText = `It was a <span class="inputStyle">${weather}</span> day. Mr. Bread was feeling a bit sad. He decided to pick out his favorite <span class="inputStyle">${color}</span> outfit before starting his day.
-            
-            He <span class="inputStyle">${verb1}</span> to the nearby <span class="inputStyle">${location1}</span> where he <span class="inputStyle">${verb2}</span> all day. After, Mr. Bear was feeling super hungry. He bought <span class="inputStyle">${noun}</span> at the store and ate <span class="inputStyle">${number}</span> of them!
-            
+            <br><br>
+            He <span class="inputStyle">${verb1}</span> to the nearby <span class="inputStyle">${location1}</span> where he <span class="inputStyle">${verb2}</span> all day. After, Mr. Bread was feeling super hungry. He bought <span class="inputStyle">${noun}</span> at the store and ate <span class="inputStyle">${number}</span> of them!
+            <br><br>
             While he was eating, a nearby voice said, "<span class="inputStyle">${greeting}</span>". It was Ms.<span class="inputStyle">${animal}</span>. She had just come from <span class="inputStyle">${location2}</span>. She was <span class="inputStyle">${adj2}</span> and wanted some <span class="inputStyle">${noun}</span> too.
-            
-            Mr. Bear replied “${exclamation}” and they ${verb3} and ate together.`;
+            <br><br>
+            Mr. Bread replied “<span class="inputStyle">${exclamation}</span>” and they <span class="inputStyle">${verb3}</span> and ate together.`;
 
             document.querySelector('#adj1').value='';
             document.querySelector('#weather').value='';
@@ -99,7 +100,7 @@
             document.querySelector('#verb3').value='';
 
             // Changing toast
-        let toastImg = document.querySelector("#overlayContent div img");
+        let toastImg = document.querySelector("#overlayTextImg img");
 
         if (color == "red") {
             toastImg.setAttribute("src", "images/red.png");
@@ -116,7 +117,7 @@
         }
 
         errorMessage.innerHTML = myText;
-        overlayContent.innerHTML = storyTitle;
+        overlayTitle.innerHTML = storyTitle;
         overlayContent.innerHTML = storyText;
     });
 

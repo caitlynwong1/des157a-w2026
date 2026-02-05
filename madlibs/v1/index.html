@@ -27,16 +27,16 @@
 
         <form id = "form">
             <div id="questions">
-                <label for="adj1">adjective</label>
+                <label for="adj1">Adjective</label>
                 <input type="text" name="adj1" id="adj1">
 
-                <label for="weather">weather</label>
+                <label for="weather">Weather</label>
                 <input type="text" name="weather" id="weather">
 
                 <!-- <label for="color">color</label>
                 <input type="color" name="color" id="color"> -->
 
-                <label for="color">color</label>
+                <label for="color">Color</label>
                 <select id="color">
                     <option value="" selected>---</option>
                     <option value="red">Red</option>
@@ -45,37 +45,37 @@
                     <option value="yellow">Yellow</option>
                 </select>
 
-                <label for="verb1">verb(past tense)</label>
+                <label for="verb1">Verb(past tense)</label>
                 <input type="text" name="verb" id="verb1">
 
-                <label for="location1">location</label>
+                <label for="location1">Location</label>
                 <input type="text" name="location" id="location1">
 
-                <label for="verb1">verb(past tense)</label>
+                <label for="verb1">Verb(past tense)</label>
                 <input type="text" name="verb" id="verb2">
 
-                <label for="noun">noun</label>
+                <label for="noun">Noun</label>
                 <input type="text" name="noun" id="noun">
 
-                <label for="number">number</label>
+                <label for="number">Number</label>
                 <input type="number" name="number" id="number">
 
-                <label for="exclamation">exclamation</label>
+                <label for="exclamation">Exclamation</label>
                 <input type="text" name="exclamation" id="exclamation">
 
-                <label for="animal">animal</label> 
+                <label for="animal">Animal</label> 
                 <input type="text" name="animal" id="animal">
 
-                <label for="location2">location</label>
+                <label for="location2">Location</label>
                 <input type="text" name="location" id="location2">
 
-                <label for="adj2">adjective</label>
+                <label for="adj2">Adjective</label>
                 <input type="text" name="adj2" id="adj2">
 
-                <label for="greeting">greeting/phrase</label>
+                <label for="greeting">Greeting/Phrase</label>
                 <input type="text" name="greeting" id="greeting">
 
-                <label for="verb3">verb</label>
+                <label for="verb3">Verb</label>
                 <input type="text" name="verb" id="verb3">
             </div>
 
@@ -86,14 +86,17 @@
             <!-- OVERLAY CONTENT HERE -->
         <div id="overlay" class="hidden">
             <article id="overlayContent">
-                <div>
-                    <button id = "closebtn">close</button>
+                <div id="btnbox">
+                    <button id="closebtn">Close</button>
                 </div>
 
-                <div>
+                <section id="overlayTextImg">
                     <img src="images/bread.png" width="516" height="456" alt="mr.bread">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quod fuga suscipit temporibus nam. Quisquam culpa neque cumque praesentium corporis distinctio officiis quia! Dolorem accusantium veniam repellat possimus, unde placeat?</p>
-                </div>
+                    <div id="overlayText">
+                        <h2>Title Text</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quod fuga suscipit temporibus nam. Quisquam culpa neque cumque praesentium corporis distinctio officiis quia! Dolorem accusantium veniam repellat possimus, unde placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quod fuga suscipit temporibus nam. Quisquam culpa neque cumque praesentium corporis distinctio officiis quia! Dolorem accusantium veniam repellat possimus, unde placeat?</p>
+                    </div>
+                </section>
             </article>
         </div>
     </main>

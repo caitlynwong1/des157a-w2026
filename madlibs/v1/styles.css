@@ -40,7 +40,18 @@ h1 {
 #left img {
     width: 80%;
     height: fit-content;
-    margin-top: 10%;
+    margin-top: 15%;
+    animation: bounce 2s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
 }
 
 /* Form Design */
@@ -55,6 +66,11 @@ input, select {
 
 fieldset input, fieldset label {
     display: inline;
+}
+
+input:focus, select:focus{
+    outline-color: var(--coffee);
+    border-color: (--coffee);
 }
 
 fieldset label {
@@ -97,7 +113,7 @@ label {
     color: white;
     width: 100%;
     /* margin-top: 20%; */
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 15%;
     border-radius: 5px;
     border: none;
@@ -136,32 +152,36 @@ label {
 #overlayContent {
     box-sizing: border-box;
     background-color:#fff;
-    padding: 20px;
+    padding: 25px 50px 25px 50px;
     width: 50vw;
     height: fit-content;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     border-radius: 20px;
-
 }
 
-#overlay div:first-of-type {
+#btnbox {
     display: flex;
     flex-direction: row;
     justify-content: end;
 }
 
-#overlay div:last-of-type {
+#overlayTextImg {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* overflow-y: scroll; */
     gap: 10%;
+    overflow-y: scroll;
+}
+
+#overlayText {
+    display: flex;
+    flex-direction: column;
 }
 
 #overlayContent img {
@@ -186,7 +206,7 @@ label {
 }
 
 /* Responsive Design */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     main{
         flex-direction: column;
     }
@@ -207,5 +227,13 @@ label {
 
     input {
         width: 100%;
+    }
+
+    #overlayContent {
+        width: 80vw;
+    }
+
+    #overlayTextImg {
+        flex-direction: column;
     }
 }
