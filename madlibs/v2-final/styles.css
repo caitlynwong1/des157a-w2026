@@ -1,0 +1,239 @@
+body {
+    --brown: #46200A;
+    --cream: #FFF2E1;
+    --coffee: #B87247;
+    background-color: var(--cream);
+    color: var(--brown);
+    font-family: 'DotGothic16';
+}
+
+.noScroll {
+    overflow: hidden;
+}
+
+main {
+    padding: 2% 10% 2% 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5% 1% 5%;
+}
+
+h1 {
+    font-size: 64px;
+    margin: 0;
+}
+
+/* Header Title and Mr. Bread Graphic */
+#left {
+    display: flex;
+    flex-direction: column;
+}
+
+#left img {
+    width: 80%;
+    height: fit-content;
+    margin-top: 15%;
+    animation: bounce 2s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+}
+
+/* Form Design */
+input, label, select {
+    display: block;
+}
+
+input, select {
+    margin-bottom: 1em;
+    color: var(--brown);
+}
+
+fieldset input, fieldset label {
+    display: inline;
+}
+
+input:focus, select:focus{
+    outline-color: var(--coffee);
+    border-color: (--coffee);
+}
+
+fieldset label {
+    margin-bottom: 1em;
+}
+
+label {
+    font-family: 'DotGothic16';
+    color: white;
+    margin-bottom: 4px;
+}
+
+#form {
+    background-image: url('images/board.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* background-color: white; */
+    padding: 5% 5% 0% 5%;
+    margin: 0;
+    height: fit-content;
+}
+
+#questions {
+    columns: 2;
+    column-gap: 1em;
+    margin-top: 10%;
+}
+
+#color {
+    width: 100%;
+}
+
+/* Submit Button */
+
+#submitbtn{
+    margin: 0;
+    padding: 2%;
+    background-color: var(--coffee);
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    /* margin-top: 20%; */
+    margin-top: 5%;
+    margin-bottom: 15%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 5px 1px rgba(34, 34, 34, 0.43);
+}
+
+#submitbtn:hover {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+/* Error Message for Incomplete Fields */
+#errorMessage {
+    text-align: center;
+    color: red;
+}
+
+/* Overlay */
+#overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#closebtn {
+    color: white;
+    border: none;
+    background-color: var(--coffee);
+    padding: 1%;
+    border-radius: 5px;
+}
+
+#overlayContent {
+    box-sizing: border-box;
+    background-color:#fff;
+    padding: 25px 50px 25px 50px;
+    width: 50vw;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: flex;
+    flex-direction: column; */
+    border-radius: 20px;
+}
+
+#btnbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#overlayTextImg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    overflow-y: scroll;
+}
+
+#overlayText {
+    display: flex;
+    flex-direction: column;
+}
+
+#overlayContent img {
+    width: 50%;
+    height: auto;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+.inputStyle {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    main{
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    #left {
+        margin-bottom: 5%;
+        align-items: center;
+    }
+
+    #submitbtn {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #overlayContent {
+        width: 80vw;
+    }
+
+    #overlayTextImg {
+        flex-direction: column;
+    }
+}
