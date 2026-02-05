@@ -70,7 +70,7 @@ fieldset input, fieldset label {
 
 input:focus, select:focus{
     outline-color: var(--coffee);
-    border-color: (--coffee);
+    border-color: var(--coffee);
 }
 
 fieldset label {
