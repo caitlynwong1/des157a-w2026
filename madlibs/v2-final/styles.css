@@ -2,9 +2,13 @@ body {
     --brown: #46200A;
     --cream: #FFF2E1;
     --coffee: #B87247;
-    background-color: var(--cream);
+    /* background-color: var(--cream); */
+    background-image: url('images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     color: var(--brown);
     font-family: 'DotGothic16';
+    /* letter-spacing: 2px; */
 }
 
 .noScroll {
@@ -87,6 +91,7 @@ label {
     background-image: url('images/board.png');
     background-size:cover;
     background-repeat: no-repeat;
+    /* box-shadow:5px 5px 15px 5px rgba(0,0,0,0.1); */
     /* background-color: white; */
     padding: 5% 5% 0% 5%;
     margin: 0;
@@ -101,6 +106,12 @@ label {
 
 #color {
     width: 100%;
+}
+
+input::placeholder {
+    font-size: 14px;
+    /* font-family:'Gill Sans'; */
+    color: rgb(193, 193, 193);
 }
 
 /* Submit Button */
