@@ -158,6 +158,18 @@ input::placeholder {
     background-color: var(--coffee);
     padding: 1%;
     border-radius: 5px;
+    box-shadow: 0px 1px 4px 1px rgba(131, 131, 131, 0.43);
+}
+
+#closebtn:hover {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+#btnbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
 #overlayContent {
@@ -173,12 +185,6 @@ input::placeholder {
     /* display: flex;
     flex-direction: column; */
     border-radius: 20px;
-}
-
-#btnbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
 }
 
 #overlayTextImg {
