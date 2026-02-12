@@ -2,9 +2,13 @@ body {
     --brown: #46200A;
     --cream: #FFF2E1;
     --coffee: #B87247;
-    background-color: var(--cream);
+    /* background-color: var(--cream); */
+    background-image: url('images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     color: var(--brown);
     font-family: 'DotGothic16';
+    /* letter-spacing: 2px; */
 }
 
 .noScroll {
@@ -70,7 +74,7 @@ fieldset input, fieldset label {
 
 input:focus, select:focus{
     outline-color: var(--coffee);
-    border-color: (--coffee);
+    border-color: var(--coffee);
 }
 
 fieldset label {
@@ -87,6 +91,7 @@ label {
     background-image: url('images/board.png');
     background-size:cover;
     background-repeat: no-repeat;
+    /* box-shadow:5px 5px 15px 5px rgba(0,0,0,0.1); */
     /* background-color: white; */
     padding: 5% 5% 0% 5%;
     margin: 0;
@@ -101,6 +106,12 @@ label {
 
 #color {
     width: 100%;
+}
+
+input::placeholder {
+    font-size: 14px;
+    /* font-family:'Gill Sans'; */
+    color: rgb(193, 193, 193);
 }
 
 /* Submit Button */
@@ -147,6 +158,18 @@ label {
     background-color: var(--coffee);
     padding: 1%;
     border-radius: 5px;
+    box-shadow: 0px 1px 4px 1px rgba(131, 131, 131, 0.43);
+}
+
+#closebtn:hover {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+#btnbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
 #overlayContent {
@@ -162,12 +185,6 @@ label {
     /* display: flex;
     flex-direction: column; */
     border-radius: 20px;
-}
-
-#btnbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
 }
 
 #overlayTextImg {
