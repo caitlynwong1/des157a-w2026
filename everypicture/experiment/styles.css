@@ -1,0 +1,49 @@
+main {
+    padding: 2%;
+}
+
+.imgBox {
+    font-family: 'DM Sans';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.grow {
+    transform: scale(1.2);
+    transition: all ease-in 1s;
+}
+
+.shrink {
+    transform: scale(1);
+    transition: all ease-out 1s;
+}
+
+.outfocus {
+    filter: blur(5px);
+}
+
+.infocus {
+    filter: blur(0);
+    transition: all ease-in-out 0.5s;
+}
+
+.imgScroll {
+    animation: scroll 10s linear infinite;
+}
+
+.scrollContent {
+    display: flex;
+    gap: 16px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
