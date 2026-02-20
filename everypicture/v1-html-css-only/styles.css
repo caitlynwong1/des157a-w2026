@@ -16,6 +16,18 @@ header {
     padding: 1% 5% 1% 5%;
 }
 
+/* Back to Portal Page button */
+header a {
+    text-decoration: none;
+    color: var(--black);
+    transition: all 0.5s;
+}
+
+header a:hover {
+    font-weight: bold;
+}
+
+/* Title Styling */
 #title h1 {
     margin: 0;
     padding: 0;
@@ -42,10 +54,12 @@ header {
     text-align: center;
 }
 
+/* Span for individual letters */
 .italic {
     font-style: italic;
 }
 
+/* Main styling */
 main {
     padding: 0;
     margin: 0;
@@ -54,6 +68,7 @@ main {
     align-items: center;
 }
 
+/* Photo gallery */
 #gallery {
     display: flex;
     flex-direction: column;
@@ -85,6 +100,7 @@ main {
     overflow: hidden;
 }
 
+/* Image Hover */
 .img:hover {
     overflow: hidden;
     box-shadow: inset 0px 0px 15px 10px #000000;
