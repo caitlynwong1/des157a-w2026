@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    --cream: #fefbf6;
+    --black: rgb(22, 22, 22);
+    background-color: var(--cream);
+    color: (--black);
+}
+
+header {
+    font-family: "DM Sans";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5% 1% 5%;
+}
+
+#title h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+#title h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-size: 128px;
+}
+
+#title p {
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans";
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 3% 1% 3% 1%;
+    float: left;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5%;
+    gap: 0.5%;
+}
+
+.img {
+    display: block;
+    object-fit: cover;
+    height: 400;
+    width: auto;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.imgContainer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.img:hover {
+    overflow: hidden;
+    box-shadow: inset 0px 0px 15px 10px #000000;
+    transform: scale(1.05);
+}
+
+
