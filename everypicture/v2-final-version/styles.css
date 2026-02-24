@@ -4,7 +4,7 @@ body {
     --cream: #fefbf6;
     --black: rgb(22, 22, 22);
     background-color: var(--cream);
-    color: (--black);
+    color: var(--black);
 }
 
 header {
@@ -33,7 +33,7 @@ header a:hover {
 
 .showingHeader {
     margin: 0;
-    display: visible;
+    display: contents;
     z-index: 10;
     position: fixed;
     background-color: var(--cream);
@@ -109,7 +109,7 @@ main {
 .img {
     display: block;
     object-fit: cover;
-    height: 400;
+    height: 400px;
     width: auto;
     cursor: pointer;
     transition: all 0.5s;
