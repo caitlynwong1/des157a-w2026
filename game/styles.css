@@ -1,0 +1,18 @@
+body {
+    padding: 2% 20% 2% 20%;
+}
+
+h1 {
+    font-family: 'Arimo';
+    color: cornflowerblue;
+}
+
+img {
+   width: 100%;
+}
+
+#images {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
