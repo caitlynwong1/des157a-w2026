@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+    --cream: #fefbf6;
+    --black: rgb(22, 22, 22);
+    background-color: var(--cream);
+    color: var(--black);
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.custom-cursor {
+    font-size: 12px;
+    text-align: center;
+    font-family: 'DM Sans';
+    padding: 4px 8px 4px 8px;
+    color: white;
+    background-color: rgb(22, 22, 22, 0.2);
+    border-radius: 2px;
+    position: fixed;
+    pointer-events: none;
+    z-index: 1000;
+    transform: translate(10%, 10%);
+    opacity: 1;
+}
+
+header {
+    font-family: "DM Sans";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5% 1% 5%;
+}
+
+/* Back to Portal Page button */
+header a {
+    text-decoration: none;
+    color: var(--black);
+    transition: all 1s;
+}
+
+header a:hover {
+    font-weight: bold;
+}
+
+.hiddenHeader{
+    display: none;
+}
+
+.showingHeader {
+    margin: 0;
+    display: contents;
+    z-index: 10;
+    position: fixed;
+    background-color: var(--cream);
+    text-align: center;
+    width: 100%;
+    padding: 1% 5% 1% 5%;
+    font-family: "DM Sans";
+}
+
+/* Title Styling */
+/* #title {
+    z-index: 10;
+    position: fixed;
+} */
+
+#title h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+#title h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-size: 128px;
+}
+
+#title p {
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans";
+    text-align: center;
+}
+
+/* Span for individual letters */
+.italic {
+    font-style: italic;
+}
+
+/* Main styling */
+main {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Photo gallery */
+#gallery {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 3% 0% 3% 0%;
+    float: left;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5%;
+    gap: 0.5%;
+}
+
+.img {
+    display: block;
+    object-fit: cover;
+    height: 400px;
+    width: auto;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.imgContainer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* infinite scroll */
+
+.row {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.show {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* Image Hover */
+.img:hover {
+    overflow: hidden;
+    box-shadow: inset 0px 0px 15px 10px #000000;
+    transform: scale(1.05);
+}
+
+/* Overlay */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(1000px);
+    transition: all 1s;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s;
+}
+
+#overlay {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    background-color: var(--cream);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#overlayContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+#overlayImg {
+    height: 600px;
+    width: auto;
+    padding-bottom: 2%;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.backbtn {
+    font-family: 'DM Sans';
+    padding: 2% 5% 2% 5%;
+}
+
+.backbtn:hover {
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.backbtn:hover i {
+    animation-name: bounce;
+    animation-duration: 1s;
+    transition: ease-in;
+}
+
+@keyframes bounce {
+0% {
+    transform: translate(-2px);
+} 50% {
+    transform: translate(2px);
+}
+}
