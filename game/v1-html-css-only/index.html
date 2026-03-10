@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <title>Game On! v1</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.2.0/css/all.css">
+</head>
+
+<body>
+    <header>
+        <h1>MilkFight</h1>
+        <nav>
+            <ul>
+                <li class="smallbtn">how to play</li>
+                <li><i class="volume fa-solid fa-volume"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="left">
+            <div id="playerProfile">
+                <div id="health">
+                    <p>health</p>
+                    <div id="healthBar">
+                        <div id="barFill"></div>
+                    </div>
+                    <p id="playerHealth"></p>
+                </div>
+
+                <img src="images/caitlyn.png" width="242" height="326" alt="caitlyn">
+                <div class="lactaidbtn button">
+                    <h2>LACTAID</h2>
+                </div>
+
+                <div class="drinkbtn button">
+                    <h2>DRINK</h2>
+                </div>
+            </div>
+
+            <div id="playerScore">
+                <h2>score: <span class="currentScore">5</span> / 10</p>
+            </div>
+        </div>
+
+
+        <div id="right">
+            <div id="milkProfile">
+                <img src="images/milk.png">
+            </div>
+
+            <div id="dialogBox">
+                <p> The milk is <span class="milkChoice">strong</span>.</p>
+                <p> Because you <span class="playerChoice">took a lactaid</span>, you gain +1 calcium.</p>
+                <p>Keep going!</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

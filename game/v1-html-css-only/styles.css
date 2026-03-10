@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 2% 2% 2% 2%;
+    --cream: #FBF6E8;
+    --blue: #6985C4;
+    --lightblue: #D6E1F3;
+    --yellow: #F5C74D;
+    background-color: var(--cream);
+    overflow-y: hidden;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+header h1 {
+    font-size: 64px;
+    font-family: 'Arbutus';
+    color: var(--blue);
+    margin: 0;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.smallbtn{
+    font-family: 'Arimo';
+    color: var(--blue);
+    background-color: var(--lightblue);
+    padding: 16px 24px 16px 24px;
+    border-radius: 50px;
+}
+
+.volume {
+    background-color: var(--blue);
+    padding: 16px;
+    border-radius: 50px;
+}
+
+i {
+    color: white;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 2% 0% 2% 0%;
+}
+
+/* left side */
+
+#left {
+    flex: 1;
+}
+
+#playerProfile {
+    font-family: 'Arbutus';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* width: 75%; */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Health Bar */
+
+#health {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    width: 50%;
+}
+
+#healthBar {
+    background-color: var(--blue);
+    height: 24px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* #barFill {
+    background-color: var(--blue);
+    width: 50%;
+} */
+
+/* Player Profile */
+
+#playerProfile img {
+    width: 40%;
+    height:auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#playerScore {
+    padding: 0;
+}
+
+.button {
+    text-align: center;
+    width: 40%;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 0;
+    padding: 8px 8px 8px 8px;
+}
+
+.lactaidbtn{
+    color: var(--yellow);
+    background-color: var(--blue);
+}
+
+.drinkbtn {
+    color: var(--blue);
+    background-color: var(--yellow);
+}
+
+/* Player Score */
+#playerScore {
+    margin-top: 32px;
+    font-family: 'Arbutus';
+}
+
+.currentScore {
+    color: var(--blue);
+}
+
+
+/* Right Side */
+#right {
+    flex: 1;
+}
+
+#milkProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#milkProfile img {
+    width: 35%;
+    margin-bottom: 16px;
+}
+
+/* Diaglog Box */
+#dialogBox {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 5% 0% 5% 10%;
+    font-family: 'Arimo';
+}
+
+.milkChoice {
+    color: var(--yellow);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Arbutus';
+}
+
+.playerChoice {
+    color: var(--blue);
+    font-weight: bold;
+    font-family: 'Arbutus';
+    text-transform: uppercase;
+}
+
+
