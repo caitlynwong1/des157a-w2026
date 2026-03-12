@@ -32,6 +32,8 @@ nav {
 }
 
 nav ul {
+    /* padding: 0;
+    margin: 0; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,6 +65,12 @@ nav ul li {
     background-color: var(--yellow);
     padding: 16px;
     border-radius: 50px;
+    transition: all 0.2s;
+}
+
+.volume:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
 }
 
 i {
