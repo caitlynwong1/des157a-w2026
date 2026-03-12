@@ -245,6 +245,7 @@ main {
 
 #milkProfile img {
     width: 35%;
+    height: auto;
     margin-bottom: 16px;
 }
 
