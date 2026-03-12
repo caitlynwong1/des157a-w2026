@@ -19,9 +19,11 @@
     let score = new Audio('sounds/score.wav');
     score.volume = 0.8;
     let hurt = new Audio('sounds/hurt.wav');
-    hurt.volume = 0.8;
+    hurt.volume = 0.6;
     let win = new Audio('sounds/win.wav');
+    win.volume = 0.6;
     let lose = new Audio('sounds/lose.wav');
+    lose.volume = 0.8;
 
     const volume = document.querySelector ('.volume');
 
