@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <title>Game On!</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.2.0/css/all.css">
+</head>
+
+<body>
+    <header>
+        <h1>MilkFight</h1>
+        <nav>
+            <ul>
+                <li class="smallbtn howtoplay">How to Play</li>
+                <li><i class="volume fa-solid fa-volume"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="left">
+            <div id="playerProfile">
+                <div id="health">
+                    <p>Health</p>
+                    <div id="healthBar">
+                        <div id="barFill"></div>
+                    </div>
+
+                        <!-- <li class="button">
+                        <i class="far fa-hand-pointer"></i>
+                        <a href="game/designV1.html">design v1</a>
+                    </li> -->
+                    <p class="currentHealth">5</p>
+                </div>
+
+                <img src="images/caitlyn.png" width="242" height="326" alt="caitlyn">
+                
+                <div class = "btns">
+                    <div class="lactaidbtn button btnshow">
+                        <h2>Lactaid</h2>
+                    </div>
+
+                    <div class="drinkbtn button btnshow">
+                        <h2>Drink</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="playerScore">
+                <h2>calcium score: <span class="currentScore">0</span> / 5</p>
+            </div>
+        </div>
+
+
+        <div id="right">
+            <div id="milkProfile">
+                <img src="images/milk.png">
+            </div>
+
+            <div id="dialogBox">
+                <p>Choose an action to start</p>
+            </div>
+        </div>
+
+        <!-- OVERLAY CONTENT HERE -->
+        <div id="overlay" class="showing">
+            <article id="overlayContent">
+                <div id="btnbox">
+                    <i class="closebtn fa-solid fa-circle-xmark"></i>
+                </div>
+
+                <div id="overlayText">
+                    <h2>How to Play</h2>
+                    <p>Lactose. The most dangerous cause of death known to man. Fight your milk and get enough calcium or die trying.</p>
+                    <p>Your goal: <span class="scoreSpan">Achieve a calcium score of 5</span></p>
+                    <p>Be careful! If your health hits 0, you will die of lactose overdose.</p>
+
+                    <div class = "optionsSection">
+                        <div class="option">
+                            <div class="overlayLacTag overlayTag">Take Lactaid</div>
+                            <p>The slow game. If you decide to take a lactaid and:
+                            <br> 1. The milk is <span class="overlaySpan">lactose</span>: you gain <span class="overlaySpan">+1 calcium points</span>.
+                            <br> 2. The milk is <span class="overlaySpan">lactose-free</span>: you lose <span class="overlaySpan">-1 health.</span></p>
+                        </div>
+
+                        <div class="option">
+                            <div class="overlayDrinkTag overlayTag">Drink Milk</div>
+                            <p>The fast game. If you decide to drink the milk and:
+                            <br> 1. The milk is <span class="overlaySpan2">lactose</span>: you lose <span class="overlaySpan2">-2 health</span>.
+                            <br> 2. The milk is <span class="overlaySpan2">lactose-free</span>: you gain <span class="overlaySpan2">+2 health.</span></p>
+                        </div>
+                    </div>
+
+                    <p>Choose your gameplay wisely, as strategy is crucial to your survival. Good luck!</p>
+
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+</html>

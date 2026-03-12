@@ -1,0 +1,393 @@
+body {
+    margin: 0;
+    padding: 2% 2% 2% 2%;
+    --cream: #FBF6E8;
+    --blue: #6985C4;
+    --lightblue: #D6E1F3;
+    --yellow: #F5C74D;
+    --lightyellow: rgb(255, 249, 205);
+    background-color: var(--cream);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+header h1 {
+    font-size: 64px;
+    font-family: 'Arbutus';
+    color: var(--blue);
+    margin: 0;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.howtoplay{
+    font-family: 'Arimo';
+    color: var(--blue);
+    background-color: var(--lightblue);
+    padding: 16px 24px 16px 24px;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.howtoplay:hover{
+    color: white;
+    background-color: var(--blue);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.volume {
+    background-color: var(--yellow);
+    padding: 16px;
+    border-radius: 50px;
+}
+
+i {
+    color: white;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 2% 0% 2% 0%;
+}
+
+/* left side */
+
+#left {
+    flex: 1;
+}
+
+#playerProfile {
+    font-family: 'Arbutus';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* width: 75%; */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Health Bar */
+
+#health {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    width: 50%;
+}
+
+.currentHealth {
+    color: var(--blue);
+}
+
+#healthBar {
+    position: relative;
+    background-color: white;
+    height: 24px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#barFill {
+    position: absolute;
+    background-color: var(--blue);
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    transition: width 1s;
+    width: 100%;
+    height: 100%;
+}
+
+/* #healthBar::after {
+    content:"";
+    width: 0;
+    height: 100%;
+    background-color: white;
+    transition: 1s;
+    position: absolute;
+    right: 0;
+}
+
+#healthBar:hover::after {
+    width: 100%;
+    right: 0;
+} */
+
+/* Player Profile */
+
+#playerProfile img {
+    width: 40%;
+    height:auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.button {
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 0;
+    padding: 8px 8px 8px 8px;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    color: white;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.lactaidbtn{
+    color: var(--lightyellow);
+    background-color: var(--yellow);
+}
+
+.drinkbtn {
+    color: var(--lightblue);
+    background-color: var(--blue);
+}
+
+#restartbtn {
+    color: var(--lightyellow);
+    background-color: var(--yellow);
+    padding: 8px 8px 8px 8px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    font-family: 'Arbutus';
+    transition: all 0.2s;
+}
+
+#restartbtn:hover {
+    cursor: pointer;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.ending {
+    margin: 0;
+    font-size: 64px;
+    color: var(--blue);
+    font-family: 'Arbutus';
+}
+
+.btnshow {
+    visibility: visible;
+    opacity: 1;
+}
+
+.btnhide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Player Score */
+#playerScore {
+    margin-top: 2%;
+    font-family: 'Arbutus';
+    padding: 0;
+    font-size: 20px;
+}
+
+.currentScore {
+    color: var(--blue);
+}
+
+
+/* Right Side */
+#right {
+    flex: 1;
+}
+
+#milkProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#milkProfile img {
+    width: 35%;
+    margin-bottom: 16px;
+}
+
+/* Diaglog Box */
+#dialogBox {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 5% 0% 5% 10%;
+    font-family: 'Arimo';
+}
+
+.milkSpan {
+    color: var(--yellow);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Arbutus';
+}
+
+.playerSpan {
+    color: var(--blue);
+    font-weight: bold;
+    font-family: 'Arbutus';
+    text-transform: uppercase;
+}
+
+.scoreSpan {
+    color: var(--blue);
+    font-weight: bold;
+    font-family: 'Arbutus';
+    text-transform: uppercase;
+}
+/* ------------- */
+
+/* Close Button */
+
+.closebtn {
+    color: var(--lightblue);
+    font-size: 32px;
+}
+
+.closebtn:hover {
+    cursor: pointer;
+}
+
+/* ------------- */
+
+#btnbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#overlay {
+    position: absolute;
+    background-color: rgba(74, 74, 74, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlayContent {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 16px 32px 32px 32px;
+    width: 50vw;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+#overlayText {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-family: 'Arimo';
+}
+
+#overlayText h2 {
+    font-family: 'Arbutus';
+    text-align: center;
+    color: black;
+    margin: 0;
+}
+
+#overlayText p {
+    margin: 0;
+}
+
+.overlayTag {
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    padding: 8px 16px 8px 16px;
+    font-family: 'Arbutus';
+}
+
+.overlayLacTag {
+    color: white;
+    background: var(--yellow);
+}
+
+.overlayDrinkTag {
+    color: white;
+    background: var(--blue);
+}
+
+.optionsSection {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.overlaySpan{
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+.overlaySpan2 {
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
