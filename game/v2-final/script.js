@@ -111,7 +111,7 @@
                 score.cloneNode().play();
             }, 400);
             dialogBox.innerHTML = `<p> The milk is <span class="milkSpan">lactose-free</span></p>
-                <p> Because you <span class="playerSpan">drank the mik</span>, you survived drinking the milk!</p>
+                <p> Because you <span class="playerSpan">drank the milk</span>, you survived drinking the milk!</p>
                 <p> You gain <span class="scoreSpan">+2 calcium</span></p>
                 <p>Keep going!</p>`;
         } else if (milkChoice == "lactose" && playerChoice == "drank milk" && gameState == 'still playing') {
