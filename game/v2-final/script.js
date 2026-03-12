@@ -17,7 +17,9 @@
     let click = new Audio('sounds/eat.wav');
     // let sipmilk = new Audio('sounds/sip.wav');
     let score = new Audio('sounds/score.wav');
+    score.volume = 0.8;
     let hurt = new Audio('sounds/hurt.wav');
+    hurt.volume = 0.8;
     let win = new Audio('sounds/win.wav');
     let lose = new Audio('sounds/lose.wav');
 
@@ -34,7 +36,6 @@
             volume.classList.replace("fa-volume", "fa-volume-xmark");
         }
     });
-
 
     // ------------------------------Player Chooses an Action----------------------------
 
