@@ -392,3 +392,18 @@ main {
     transition: all 0.5s;
 }
 
+.sourcesbtn {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    background-color: var(--lightblue);
+    font-family: 'Arimo';
+    padding: 8px 10px 8px 10px;
+    opacity: 0.8;
+    border-radius: 50px;
+}
+
+.sourcesbtn a {
+    text-decoration: none;
+    color: var(--blue);
+}
